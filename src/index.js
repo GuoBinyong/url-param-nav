@@ -120,6 +120,8 @@ export function createFunToNavToLaunchLocaOfParams(options) {
 }
 
 
+export default createFunToNavToLaunchLocaOfParams
+
 
 
 

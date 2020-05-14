@@ -37,8 +37,7 @@ type NavToLaunchLocaOfParams = (url?:string)=>void;
 export function createFunToNavToLaunchLocaOfParams(options:UrlParamNavOpts):NavToLaunchLocaOfParams;
 
 
-
-
+export default createFunToNavToLaunchLocaOfParams
 
 
 
