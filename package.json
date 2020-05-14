@@ -1,0 +1,55 @@
+{
+  "name": "url-param-nav",
+  "version": "1.0.0",
+  "description": "url-param-nav 是用于执行在url参数中传递的跳转位置的工具，它解决了单面应用中用url参数传递跳转位置带来的重复跳转等问题",
+  "main": "dist/url-param-nav.cjs.js",
+  "module": "dist/url-param-nav.esm.js",
+  "types": "types/index.d.ts",
+  "sideEffects": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuoBinyong/url-param-nav"
+  },
+  "keywords": [
+    "url",
+    "query",
+    "parameter",
+    "Jump",
+    "跳转",
+    "navigation",
+    "导航",
+    "url parameter navigation",
+    "url参数导航",
+    "replace",
+    "替换",
+    "extra",
+    "多余",
+    "clear extra url parameter",
+    "清除多余的url参数"
+  ],
+  "author": "郭斌勇",
+  "license": "ISC",
+  "files": [
+    "dist/[^.]*",
+    "types/[^.]*"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-node-resolve": "^7.1.3",
+    "rollup": "^2.7.2",
+    "rollup-plugin-babel": "^4.2.0"
+  },
+  "dependencies": {
+    "bom-expand": "^1.0.10",
+    "com-tools": "^1.0.13",
+    "es-expand": "^1.0.13"
+  }
+}
