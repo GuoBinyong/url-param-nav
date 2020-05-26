@@ -140,7 +140,7 @@ export function replaceCurrUrlByDisableNav(url,allowNavToLaunchLoca){
   window[disableNavToOnceLaunchLocaKey] = true;
   var newUrl = (typeof url == "object") ? stringifyUrl(url) : url;
   location.replace(newUrl);
-};
+}
 
 
 
