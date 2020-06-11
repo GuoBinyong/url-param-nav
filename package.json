@@ -1,6 +1,6 @@
 {
   "name": "url-param-nav",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "url-param-nav 是用于执行在url参数中传递的跳转位置的工具，它解决了单面应用中用url参数传递跳转位置带来的重复跳转等问题",
   "main": "dist/url-param-nav.cjs.js",
   "module": "dist/url-param-nav.es.js",
