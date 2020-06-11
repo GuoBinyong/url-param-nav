@@ -1,16 +1,16 @@
-import "com-tools"
+import {UrlUtils} from "url-tls"
 
 declare const disableNavToOnceLaunchLocaKey:"_disableNavToOnceLaunchLocaKey_";
 declare const lastUrlUtilsKey:"_lastUrlUtilsKey_";
 
-type ParamType = "searchParams" | "hashParams";
-type ParamTypeOpts = ParamType | [ParamType,ParamType];
+export type ParamType = "searchParams" | "hashParams";
+export type ParamTypeOpts = ParamType | [ParamType,ParamType];
 
 
-type IncludeAndExcludeKeysOptions = { include?: string[], exclude?: string[] };
-type ClearExtraUrlParams = IncludeAndExcludeKeysOptions | {search?:IncludeAndExcludeKeysOptions|null,hash?:IncludeAndExcludeKeysOptions|null};
+export type IncludeAndExcludeKeysOptions = { include?: string[], exclude?: string[] };
+export type ClearExtraUrlParams = IncludeAndExcludeKeysOptions | {search?:IncludeAndExcludeKeysOptions|null,hash?:IncludeAndExcludeKeysOptions|null};
 
-interface UrlParamNavOpts {
+export interface UrlParamNavOpts {
     locakey : string;   //必选； url 参数中表示 要导致到的位置 的key；
     navCB : (launchLoca : any,launchUnit : UrlUtils,urlUtils : UrlUtils)=>void;    //必选；需要执行导航时的回调函数；该函数负责完成真正的导航逻辑；
     once ?: ParamTypeOpts;   //在一次会话过程中只会导航一次的 url 参数的属性名字 或 数组；即，如果 searchParams 中的 位置 需要只在整个会话（session）中导航一次，即刷新也不再导航，那么可能过把 "searchParams" 传给该属性
@@ -19,7 +19,7 @@ interface UrlParamNavOpts {
 }
 
 
-type NavToLaunchLocaOfParams = (url?:string)=>void;
+export type NavToLaunchLocaOfParams = (url?:string)=>void;
 
 /**
  * createFunToNavToLaunchLocaOfParams(options)

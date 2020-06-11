@@ -1,6 +1,7 @@
-import "es-expand"
+// import "es-expand"
 import "bom-expand"
-import {parseUrl,stringifyUrl} from "com-tools"
+import {parseUrl,stringifyUrl} from "url-tls"
+import {isDeepEqual} from "deep-tls"
 
 const disableNavToOnceLaunchLocaKey = "_disableNavToOnceLaunchLocaKey_";
 const lastUrlUtilsKey = "_lastUrlUtilsKey_";
@@ -102,7 +103,7 @@ export function createFunToNavToLaunchLocaOfParams(options) {
 
         var lastUrlUtils = sessionStorage.getParsedItem(lastUrlUtilsKey);
         var lastOnceUnit = lastUrlUtils && lastUrlUtils[unitKey];
-        if (Object.isDepthEqual(launchUnit,lastOnceUnit,true)){
+        if (isDeepEqual(launchUnit,lastOnceUnit,true)){
           return;
         }
       }

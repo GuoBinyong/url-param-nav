@@ -52,8 +52,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
-    "bom-expand": "^1.0.11",
-    "com-tools": "^1.0.15",
-    "es-expand": "^1.0.16"
+    "bom-expand": "^1.0.12",
+    "deep-tls": "^1.0.0",
+    "url-tls": "^1.0.1"
   }
 }
