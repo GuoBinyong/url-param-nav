@@ -3,9 +3,10 @@
   "version": "1.0.1",
   "description": "url-param-nav 是用于执行在url参数中传递的跳转位置的工具，它解决了单面应用中用url参数传递跳转位置带来的重复跳转等问题",
   "main": "dist/url-param-nav.cjs.js",
-  "module": "dist/url-param-nav.esm.js",
+  "module": "dist/url-param-nav.es.js",
   "types": "types/index.d.ts",
   "sideEffects": false,
+  "homepage": "https://github.com/GuoBinyong/url-param-nav#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/GuoBinyong/url-param-nav"
@@ -48,7 +49,8 @@
     "@rollup/plugin-node-resolve": "^7.1.3",
     "eslint": "^7.0.0",
     "package-tls": "^1.0.2",
-    "rollup": "^2.7.2"
+    "rollup": "^2.7.2",
+    "rollup-plugin-terser": "^6.1.0"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.6",
