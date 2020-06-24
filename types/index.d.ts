@@ -3,12 +3,12 @@ import {UrlUtils} from "url-tls"
 declare const disableNavToOnceLaunchLocaKey:"_disableNavToOnceLaunchLocaKey_";
 declare const lastUrlUtilsKey:"_lastUrlUtilsKey_";
 
-export type ParamType = "searchParams" | "hashParams";
-export type ParamTypeOpts = ParamType | [ParamType,ParamType];
+export declare type ParamType = "searchParams" | "hashParams";
+export declare type ParamTypeOpts = ParamType | [ParamType,ParamType];
 
 
-export type IncludeAndExcludeKeysOptions = { include?: string[], exclude?: string[] };
-export type ClearExtraUrlParams = IncludeAndExcludeKeysOptions | {search?:IncludeAndExcludeKeysOptions|null,hash?:IncludeAndExcludeKeysOptions|null};
+export declare type IncludeAndExcludeKeysOptions = { include?: string[], exclude?: string[] };
+export declare type ClearExtraUrlParams = IncludeAndExcludeKeysOptions | {search?:IncludeAndExcludeKeysOptions|null,hash?:IncludeAndExcludeKeysOptions|null};
 
 export interface UrlParamNavOpts {
     locakey : string;   //必选； url 参数中表示 要导致到的位置 的key；
@@ -19,7 +19,7 @@ export interface UrlParamNavOpts {
 }
 
 
-export type NavToLaunchLocaOfParams = (url?:string)=>void;
+export declare type NavToLaunchLocaOfParams = (url?:string)=>void;
 
 /**
  * createFunToNavToLaunchLocaOfParams(options)
